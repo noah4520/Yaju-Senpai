@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>野獸前輩</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="person-flex">
+        <img id="img" src="senpai.png">
+
+        <div class="person-info">
+          <span class="person-name">田所 浩二</span>
+          <span class="person-job">野獸先輩</span>
+          <audio id="audio">
+              <source src="sound.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+
+      </div>
+      <div class="person-introduction">
+        <span class="title">Introduction</span>
+        <span class="description">24歲，是學生。身高是170公分，體重是74公斤。<br>沒有特別在做什麼運動，不過有在健身，身體很結實，因此有時衣服會出現尺寸不對的情況。<br>去年和女朋友分手。曾經去過風俗店，比較喜歡王道征途，泡泡系。<br>對擼砲很是讚賞，表示自己擼砲挺頻繁的，上次大概是三天前。<br>脫衣服的時候被別人看到完全不會害羞，體現出王者一般的遊刃有餘。<br>喜歡曬太陽，所以曬痕很明顯。</span>
+      </div>
+      <div class="person-introduction">
+        <span class="title">Experience</span>
+        <table class="wikitable">
+          <tbody><tr>
+          <th>發售日期</th>
+          <th>標題</th>
+          <th>角色名稱
+          </th></tr>
+          <tr>
+          <td>99年07月18日</td>
+          <td><span lang="ja">誘惑のラビリンス</span></td>
+          <td>鈴木
+          </td></tr>
+          <tr>
+          <td>99年09月18日</td>
+          <td><span lang="ja">ザ・フェチ</span> Vol.3</td>
+          <td>
+          </td></tr>
+          <tr>
+          <td>01年03月22日</td>
+          <td><span lang="ja">変態面接官</span>SUPER S17</td>
+          <td>
+          </td></tr>
+          <tr>
+          <td>01年05月29日</td>
+          <td>SCOOOP!!! 1</td>
+          <td>
+          </td></tr>
+          <tr>
+          <td>01年07月20日</td>
+          <td><span lang="ja">真夏の夜の淫夢</span></td>
+          <td>田所
+          </td></tr>
+          <tr>
+          <td>02年07月02日</td>
+          <td>DISCOVERY6</td>
+          <td>
+          </td></tr>
+          <tr>
+          <td>02年12月03日</td>
+          <td>DISCOVERY10</td>
+          <td>
+          </td></tr></tbody></table>
+      </div>
+    </div>
+    <script>
+      var audio = document.getElementById("audio");
+
+      function addClick(){
+        console.log("觸發");
+        document.getElementById("img").click();
+      }
+
+      function playSound() {
+        console.log("觸發2");
+        audio.play();
+      }
+
+      function stopSound() {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    </script>
+  </body>
+</html>

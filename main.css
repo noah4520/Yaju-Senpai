@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  animation: color-change 0.5s infinite;
+}
+
+img{
+  border-radius: 50%;
+  transition: transform 3s ease-in-out;
+}
+
+table{
+  padding-top: 40px;
+}
+
+td{
+  padding: 10px 15px;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.person-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.person-info{
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.person-info > .person-name{
+  font-size: 30pt;
+  padding: 20px 0;
+}
+
+.person-info > .person-job{
+  font-size: 16pt;
+  letter-spacing: 20px;
+  padding: 0 3px;
+}
+
+
+.person-introduction{
+  display: flex;
+  flex-direction: row;
+  padding: 20px 40px;
+  column-gap: 60px;
+  font-size: 16pt;
+}
+
+.person-introduction > .title{
+  font-size: 18pt;
+}
+
+
+.person-introduction > .description{
+  font-size: 14pt;
+  line-height: 1.5;
+}
+
+
+.person-experience{
+  display: flex;
+  flex-direction: row;
+}
+
+img:hover{
+  transform: rotate(7200deg) scale(2);
+}
+
+@keyframes color-change {
+  0% {
+    background-color: red;
+  }
+  12.5%{
+    background-color: orange;
+  }
+  25%{
+    background-color: yellow;
+  }
+  37.5%{
+    background-color: green;
+  }
+  50%{
+    background-color: blue;
+  }
+  62.5% {
+    background-color: purple;
+  }
+  75% {
+    background-color: pink;
+  }
+  82.5% {
+    background-color: white;
+  }
+  100%{
+    background-color: red;
+  }
+}
